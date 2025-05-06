@@ -2,11 +2,18 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("androidx.navigation.safeargs.kotlin")
+    id("org.jetbrains.kotlin.kapt")
+
 }
 
 android {
     namespace = "com.example.phohouseexpress"
     compileSdk = 35
+
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.example.phohouseexpress"
@@ -60,6 +67,12 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+    implementation("io.coil-kt:coil:2.4.0")
+    implementation("io.coil-kt:coil-gif:2.4.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    kapt("com.github.bumptech.glide:compiler:4.16.0")
+
 
 
 }

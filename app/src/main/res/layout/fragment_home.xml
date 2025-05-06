@@ -1,47 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgIllustration"
+        android:layout_width="423dp"
+        android:layout_height="378dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:contentDescription="Home GIF" />
+
+
+    <TextView
+        android:text="Discover Your\nDream Job here"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Explore all the existing job roles based on\nyour interest and study major"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <include layout="@layout/card_greeting" />
-
-        <include layout="@layout/layout_search_bar" />
-
-        <TextView
-            android:text="Today's Menu"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content" />
 
-        <include layout="@layout/card_promo" />
-
-        <TextView
-            android:text="Best Offers 💕"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
             android:layout_height="wrap_content" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:id="@+id/categoryContainer"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </HorizontalScrollView>
-
-        <include layout="@menu/main_menu" />
     </LinearLayout>
-</ScrollView>
+</LinearLayout>
