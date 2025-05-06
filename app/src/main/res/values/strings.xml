@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhoHouseExpress</string>
+    <string name="login">Đăng nhập</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="confirm_order">Xác nhận đơn</string>
+</resources>
