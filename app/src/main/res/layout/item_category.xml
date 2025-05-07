@@ -3,23 +3,27 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="12dp"
-    android:layout_width="wrap_content"
+    android:layout_width="100dp"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_category_item">
 
     <ImageView
         android:id="@+id/imgCategory"
-        android:src="@drawable/ic_burger"
+        android:src="@drawable/ic_pho"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:scaleType="centerInside" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtCategoryName"
+        android:layout_width="64dp"
         android:layout_height="wrap_content"
-        android:id="@+id/tvCategoryName"
-        android:layout_marginTop="8dp"
         android:text="Phở Bò"
-        android:textSize="14sp"
-        android:textStyle="bold"/>
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        />
+
 </LinearLayout>

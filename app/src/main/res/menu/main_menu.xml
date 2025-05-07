@@ -1,14 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_location"
-        android:icon="@drawable/ic_location"
-        android:title="Location" />
-    <item android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
-        android:title="Home" />
-    <item android:id="@+id/nav_cart"
-        android:icon="@drawable/ic_cart"
-        android:title="My Cart" />
-    <item android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_user"
-        android:title="Me" />
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_home" android:title="Trang chủ" />
+    <item android:id="@+id/nav_cart" android:icon="@drawable/ic_cart" android:title="Giỏ hàng" />
+    <item android:id="@+id/nav_blog" android:icon="@drawable/ic_blog" android:title="Blog" />
+    <item android:id="@+id/nav_history" android:icon="@drawable/ic_history" android:title="Lịch sử" />
+    <item android:id="@+id/nav_profile" android:icon="@drawable/ic_profile" android:title="Cá nhân" />
 </menu>

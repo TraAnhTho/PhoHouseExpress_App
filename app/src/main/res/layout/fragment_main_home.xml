@@ -1,0 +1,238 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nội dung chính -->
+
+    <!-- Bottom Navigation -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Banner -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="272dp"
+                android:padding="12dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="234dp"
+                    android:background="@drawable/bg_card_rounded"
+                    android:padding="12dp">
+
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_search_input"
+                        android:iconifiedByDefault="false"
+                        android:queryHint="Tìm món ăn..." />
+
+                    <!-- Text content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pho House Welcome"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Món ăn đậm chất Việt Nam. Được mọi nhà tin dùng."
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_promo"
+                            android:paddingHorizontal="8dp"
+                            android:text="Bestseller"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Hình ảnh phở -->
+                <ImageView
+                    android:id="@+id/imgPho"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="end|bottom"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_pho"
+                    android:translationX="8dp"
+                    android:translationY="32dp" />
+            </FrameLayout>
+
+            <!-- Today’s Menu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Today’s Menu"
+                android:textColor="#333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Mỗi item promo -->
+                    <LinearLayout
+                        android:layout_width="274dp"
+                        android:layout_height="81dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_promo"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Free Coca!\nOrders over 45.000"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="57dp"
+                            android:layout_marginBottom="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_pho" />
+                    </LinearLayout>
+
+                    <!-- Mỗi item promo -->
+                    <LinearLayout
+                        android:layout_width="274dp"
+                        android:layout_height="81dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_promo"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Free Coca!\nOrders over 45.000"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="57dp"
+                            android:layout_marginBottom="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_pho" />
+                    </LinearLayout>
+                    <!-- Mỗi item promo -->
+                    <LinearLayout
+                        android:layout_width="274dp"
+                        android:layout_height="81dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_promo"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Free Coca!\nOrders over 45.000"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="57dp"
+                            android:layout_marginBottom="12dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_pho" />
+                    </LinearLayout>
+
+                    <!-- Thêm nhiều item promo khác tương tự -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Category Menu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingBottom="8dp" />
+            </LinearLayout>
+
+            <!-- Best Offer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Best Offers 💕"
+                android:textColor="#333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBestOffers"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false" />
+
+            <!--            &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        app:menu="@menu/main_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -4,8 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     id("androidx.navigation.safeargs.kotlin")
     id("org.jetbrains.kotlin.kapt")
-
-}
+    }
 
 android {
     namespace = "com.example.phohouseexpress"
@@ -13,6 +12,12 @@ android {
 
     buildFeatures {
         viewBinding = true
+    }
+
+    packaging {
+        resources {
+            excludes += setOf("META-INF/INDEX.LIST")
+        }
     }
 
     defaultConfig {
@@ -72,6 +77,17 @@ dependencies {
     implementation("io.coil-kt:coil-gif:2.4.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
     kapt("com.github.bumptech.glide:compiler:4.16.0")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
+    // build.gradle.kts (backend)
+    implementation("org.jetbrains.exposed:exposed-core:0.45.0")
+
 
 
 

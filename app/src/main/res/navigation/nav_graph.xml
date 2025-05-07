@@ -20,12 +20,23 @@
         android:name="com.example.phohouseexpress.app_ui.customer.auth.LoginFragment"
         android:label="Login" >
         <action
-            android:id="@+id/action_login_to_register"
-            app:destination="@id/registerFragment" />
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/mainHomeFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.phohouseexpress.app_ui.customer.auth.RegisterFragment"
-        android:label="Register" />
+        android:label="Register">
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainHomeFragment"
+        android:name="com.example.phohouseexpress.app_ui.home.MainHomeFragment"
+        android:label="Home" />
+
 </navigation>
